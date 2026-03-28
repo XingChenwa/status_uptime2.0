@@ -1,0 +1,179 @@
+{
+  "header": {
+    "settings": "Settings",
+    "addService": "Add Service",
+    "admin": "Admin",
+    "logout": "Logout"
+  },
+  "status": {
+    "defaultDesc": "Real-time service monitoring",
+    "degradedLabel": "Degraded",
+    "operational": "All Systems Operational",
+    "degraded": "Partial Service Disruption",
+    "outage": "Service Outage Detected",
+    "unknown": "Unknown",
+    "up": "Operational",
+    "down": "Outage",
+    "nodata": "No data",
+    "lastChecked": "Last checked",
+    "never": "Never",
+    "justNow": "Just now",
+    "minutesAgo": "{{n}}m ago"
+  },
+  "stats": {
+    "total": "Total Services",
+    "operational": "Operational",
+    "issues": "Issues"
+  },
+  "services": {
+    "title": "Services",
+    "add": "Add Service",
+    "edit": "Edit",
+    "delete": "Delete",
+    "empty": "No services configured",
+    "emptyHint": "Add a service to start monitoring",
+    "addFirst": "Add your first service",
+    "confirmDelete": "Delete \"{{name}}\"?"
+  },
+  "uptimeBar": {
+    "daysAgo": "90 days ago",
+    "today": "Today",
+    "uptime": "uptime",
+    "avg": "avg",
+    "checks": "checks",
+    "degraded": "Degraded"
+  },
+  "serviceModal": {
+    "addTitle": "Add New Service",
+    "editTitle": "Edit Service",
+    "name": "Service Name",
+    "namePlaceholder": "e.g. Main Website",
+    "type": "Check Type",
+    "host": "Host / URL",
+    "timeout": "Timeout (seconds)",
+    "hideHost": "Hide host / IP from public",
+    "cancel": "Cancel",
+    "save": "Save Changes",
+    "add": "Add Service",
+    "saving": "Saving...",
+    "typeHttp": "HTTP / HTTPS",
+    "typeTcp": "TCP Port",
+    "typePing": "Ping (ICMP)",
+    "errors": {
+      "nameRequired": "Service name is required.",
+      "hostRequired": "Host / URL is required.",
+      "tcpFormat": "TCP format must be host:port (e.g. 1.2.3.4:22).",
+      "httpFormat": "HTTP service must start with http:// or https://",
+      "timeoutRange": "Timeout must be between 1 and 60 seconds."
+    }
+  },
+  "settings": {
+    "title": "Settings",
+    "siteName": "Site Name",
+    "siteDesc": "Status Description",
+    "siteDescPlaceholder": "All systems operational",
+    "refreshInterval": "Auto-Refresh Interval",
+    "refreshHint": "How often the backend polls all services. Also controls the frontend auto-refresh timer.",
+    "retention": "History Retention (days)",
+    "cancel": "Cancel",
+    "save": "Save Settings",
+    "saving": "Saving...",
+    "refresh1m": "1 minute",
+    "refresh2m": "2 minutes",
+    "refresh3m": "3 minutes",
+    "refresh5m": "5 minutes",
+    "refresh10m": "10 minutes",
+    "refresh15m": "15 minutes",
+    "refresh30m": "30 minutes",
+    "refresh60m": "1 hour"
+  },
+  "confirm": {
+    "cancel": "Cancel",
+    "confirm": "Confirm"
+  },
+  "incidents": {
+    "title": "Incident History",
+    "empty": "No incidents in the last 90 days",
+    "noMessage": "No additional details provided.",
+    "affectedServices": "Affected services",
+    "addUpdate": "Add update",
+    "postUpdate": "Post update",
+    "updatePlaceholder": "Describe what changed...",
+    "addIncident": "Add Incident",
+    "editIncident": "Edit Incident",
+    "deleteIncident": "Delete",
+    "incidentTitle": "Title",
+    "incidentMessage": "Message (optional)",
+    "incidentStatus": "Status",
+    "save": "Save",
+    "saving": "Saving...",
+    "cancel": "Cancel",
+    "statusInvestigating": "Investigating",
+    "statusIdentified": "Identified",
+    "statusMonitoring": "Monitoring",
+    "statusResolved": "Resolved",
+    "resolved": "Resolved",
+    "ongoing": "Ongoing"
+  },
+  "admin": {
+    "setup": {
+      "title": "Initialize Admin Panel",
+      "subtitle": "Configure admin email and SMTP. This can only be done once through this page.",
+      "email": "Admin Email",
+      "emailPlaceholder": "admin@example.com",
+      "smtpHost": "SMTP Host",
+      "smtpHostPlaceholder": "smtp.gmail.com",
+      "smtpHostHint": "SMTP server hostname only, e.g. smtp.gmail.com or smtp.126.com",
+      "smtpPort": "SMTP Port",
+      "smtpUser": "SMTP Username",
+      "smtpPass": "SMTP Password",
+      "smtpFrom": "Sender Name (optional)",
+      "smtpFromPlaceholder": "StatusPage",
+      "submit": "Complete Setup",
+      "submitting": "Setting up...",
+      "hint": "A verification code will be sent to this email on every login."
+    },
+    "login": {
+      "title": "Admin Login",
+      "subtitle": "Enter your admin email to receive a one-time code",
+      "email": "Admin Email",
+      "sendCode": "Send Code",
+      "sending": "Sending...",
+      "codeSent": "Code sent to your email. Valid for 10 minutes.",
+      "code": "Verification Code",
+      "codePlaceholder": "Enter 6-digit code",
+      "verify": "Verify & Login",
+      "verifying": "Verifying...",
+      "resend": "Resend"
+    },
+    "dashboard": {
+      "title": "Admin Dashboard",
+      "siteSettings": "Site Settings",
+      "services": "Services",
+      "emailSettings": "Email Settings",
+      "logout": "Logout",
+      "backToSite": "Back to Site",
+      "addService": "Add Service",
+      "smtpEmail": "Admin Email",
+      "smtpHost": "SMTP Host",
+      "smtpPort": "SMTP Port",
+      "smtpUser": "SMTP Username",
+      "smtpHostHint": "SMTP server hostname only, e.g. smtp.gmail.com or smtp.126.com",
+      "smtpPass": "SMTP Password (leave blank to keep current)",
+      "smtpFrom": "Sender",
+      "save": "Save",
+      "saving": "Saving...",
+      "incidents": "Incidents"
+    }
+  },
+  "footer": {
+    "nextRefresh": "Next refresh",
+    "lastUpdated": "Last updated"
+  },
+  "theme": {
+    "dark": "Dark",
+    "light": "Light",
+    "system": "System"
+  },
+  "lang": "English"
+}

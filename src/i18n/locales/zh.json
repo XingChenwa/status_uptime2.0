@@ -1,0 +1,179 @@
+{
+  "header": {
+    "settings": "设置",
+    "addService": "添加服务",
+    "admin": "管理后台",
+    "logout": "退出登录"
+  },
+  "status": {
+    "defaultDesc": "实时服务监控",
+    "degradedLabel": "降级",
+    "operational": "所有服务正常运行",
+    "degraded": "部分服务存在问题",
+    "outage": "检测到服务中断",
+    "unknown": "未知",
+    "up": "正常",
+    "down": "故障",
+    "nodata": "暂无数据",
+    "lastChecked": "最近检测",
+    "never": "从未",
+    "justNow": "刚刚",
+    "minutesAgo": "{{n}}分钟前"
+  },
+  "stats": {
+    "total": "总服务数",
+    "operational": "正常运行",
+    "issues": "存在问题"
+  },
+  "services": {
+    "title": "服务列表",
+    "add": "添加服务",
+    "edit": "编辑",
+    "delete": "删除",
+    "empty": "暂无配置服务",
+    "emptyHint": "点击「添加服务」开始监控",
+    "addFirst": "添加第一个服务",
+    "confirmDelete": "确认删除「{{name}}」？"
+  },
+  "uptimeBar": {
+    "daysAgo": "90天前",
+    "today": "今天",
+    "uptime": "可用率",
+    "avg": "平均",
+    "checks": "次检测",
+    "degraded": "降级"
+  },
+  "serviceModal": {
+    "addTitle": "添加新服务",
+    "editTitle": "编辑服务",
+    "name": "服务名称",
+    "namePlaceholder": "如：主网站",
+    "type": "检测类型",
+    "host": "地址",
+    "timeout": "超时时间（秒）",
+    "hideHost": "对公众隐藏 host / IP",
+    "cancel": "取消",
+    "save": "保存更改",
+    "add": "添加服务",
+    "saving": "保存中...",
+    "typeHttp": "HTTP / HTTPS",
+    "typeTcp": "TCP 端口",
+    "typePing": "Ping (ICMP)",
+    "errors": {
+      "nameRequired": "服务名称不能为空",
+      "hostRequired": "地址不能为空",
+      "tcpFormat": "TCP 格式须为 host:port（如 1.2.3.4:22）",
+      "httpFormat": "HTTP 服务须以 http:// 或 https:// 开头",
+      "timeoutRange": "超时时间须在 1-60 秒之间"
+    }
+  },
+  "settings": {
+    "title": "设置",
+    "siteName": "站点名称",
+    "siteDesc": "状态描述",
+    "siteDescPlaceholder": "所有服务正常运行",
+    "refreshInterval": "自动刷新间隔",
+    "refreshHint": "后端轮询频率，同时控制前端自动刷新计时器。",
+    "retention": "历史保留天数",
+    "cancel": "取消",
+    "save": "保存设置",
+    "saving": "保存中...",
+    "refresh1m": "1 分钟",
+    "refresh2m": "2 分钟",
+    "refresh3m": "3 分钟",
+    "refresh5m": "5 分钟",
+    "refresh10m": "10 分钟",
+    "refresh15m": "15 分钟",
+    "refresh30m": "30 分钟",
+    "refresh60m": "1 小时"
+  },
+  "confirm": {
+    "cancel": "取消",
+    "confirm": "确认"
+  },
+  "incidents": {
+    "title": "历史事件",
+    "empty": "近90天内无事件记录",
+    "noMessage": "暂无详细说明。",
+    "affectedServices": "受影响的服务",
+    "addUpdate": "追加更新",
+    "postUpdate": "发布更新",
+    "updatePlaceholder": "描述最新进展...",
+    "addIncident": "新建事件",
+    "editIncident": "编辑事件",
+    "deleteIncident": "删除",
+    "incidentTitle": "标题",
+    "incidentMessage": "描述（可选）",
+    "incidentStatus": "状态",
+    "save": "保存",
+    "saving": "保存中...",
+    "cancel": "取消",
+    "statusInvestigating": "调查中",
+    "statusIdentified": "已确认",
+    "statusMonitoring": "监控中",
+    "statusResolved": "已解决",
+    "resolved": "已解决",
+    "ongoing": "处理中"
+  },
+  "admin": {
+    "setup": {
+      "title": "初始化管理后台",
+      "subtitle": "配置管理员邮箱和 SMTP 邮件服务，首次设置后无法通过此页面再次修改。",
+      "email": "管理员邮箱",
+      "emailPlaceholder": "admin@example.com",
+      "smtpHost": "SMTP 服务器地址",
+      "smtpHostPlaceholder": "smtp.gmail.com",
+      "smtpHostHint": "仅填写服务器地址，如 smtp.126.com 或 smtp.gmail.com，不要填写邮箱地址",
+      "smtpPort": "SMTP 端口",
+      "smtpUser": "SMTP 用户名",
+      "smtpPass": "SMTP 密码",
+      "smtpFrom": "发件人名称（可选）",
+      "smtpFromPlaceholder": "StatusPage",
+      "submit": "完成初始化",
+      "submitting": "初始化中...",
+      "hint": "登录时系统将向此邮箱发送验证码。"
+    },
+    "login": {
+      "title": "管理员登录",
+      "subtitle": "输入管理员邮箱以接收一次性验证码",
+      "email": "管理员邮箱",
+      "sendCode": "发送验证码",
+      "sending": "发送中...",
+      "codeSent": "验证码已发送至您的邮箱，有效期 10 分钟",
+      "code": "验证码",
+      "codePlaceholder": "请输入 6 位验证码",
+      "verify": "验证并登录",
+      "verifying": "验证中...",
+      "resend": "重新发送"
+    },
+    "dashboard": {
+      "title": "管理后台",
+      "siteSettings": "站点设置",
+      "services": "服务管理",
+      "emailSettings": "邮件设置",
+      "logout": "退出登录",
+      "backToSite": "返回首页",
+      "addService": "添加服务",
+      "smtpEmail": "管理员邮箱",
+      "smtpHost": "SMTP 服务器",
+      "smtpPort": "SMTP 端口",
+      "smtpUser": "SMTP 用户名",
+      "smtpHostHint": "仅填写服务器地址，如 smtp.126.com，不要填写邮箱地址",
+      "smtpPass": "SMTP 密码（留空则不修改）",
+      "smtpFrom": "发件人",
+      "save": "保存",
+      "saving": "保存中...",
+      "incidents": "事件管理"
+    }
+  },
+  "footer": {
+    "nextRefresh": "下次刷新",
+    "lastUpdated": "最近更新"
+  },
+  "theme": {
+    "dark": "深色",
+    "light": "浅色",
+    "system": "跟随系统"
+  },
+  "lang": "中文"
+}

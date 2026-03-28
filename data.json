@@ -1,0 +1,90 @@
+{
+  "config": {
+    "siteName": "My Status Page",
+    "siteDesc": "",
+    "refreshInterval": 5,
+    "retentionDays": 90
+  },
+  "services": [
+    {
+      "id": "1",
+      "name": "Example Website",
+      "type": "http",
+      "host": "https://www.baidu.com",
+      "timeout": 10,
+      "sort": 0,
+      "currentStatus": "up",
+      "responseTime": 43,
+      "lastChecked": "2026-03-28T15:27:49.548Z"
+    }
+  ],
+  "dailyHistory": {
+    "1": {
+      "2026-03-28": {
+        "up": 11,
+        "down": 0,
+        "total": 11,
+        "totalResponseTime": 1697
+      }
+    }
+  },
+  "recentHistory": {
+    "1": [
+      {
+        "status": "up",
+        "responseTime": 557,
+        "timestamp": "2026-03-28T14:57:49.506Z"
+      },
+      {
+        "status": "up",
+        "responseTime": 789,
+        "timestamp": "2026-03-28T15:02:49.517Z"
+      },
+      {
+        "status": "up",
+        "responseTime": 49,
+        "timestamp": "2026-03-28T15:07:19.325Z"
+      },
+      {
+        "status": "up",
+        "responseTime": 34,
+        "timestamp": "2026-03-28T15:07:26.616Z"
+      },
+      {
+        "status": "up",
+        "responseTime": 12,
+        "timestamp": "2026-03-28T15:07:27.391Z"
+      },
+      {
+        "status": "up",
+        "responseTime": 17,
+        "timestamp": "2026-03-28T15:07:28.240Z"
+      },
+      {
+        "status": "up",
+        "responseTime": 28,
+        "timestamp": "2026-03-28T15:07:49.526Z"
+      },
+      {
+        "status": "up",
+        "responseTime": 57,
+        "timestamp": "2026-03-28T15:12:49.531Z"
+      },
+      {
+        "status": "up",
+        "responseTime": 50,
+        "timestamp": "2026-03-28T15:17:49.535Z"
+      },
+      {
+        "status": "up",
+        "responseTime": 61,
+        "timestamp": "2026-03-28T15:22:49.548Z"
+      },
+      {
+        "status": "up",
+        "responseTime": 43,
+        "timestamp": "2026-03-28T15:27:49.548Z"
+      }
+    ]
+  }
+}
