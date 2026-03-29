@@ -14,7 +14,7 @@ function bars(upBase = 99) {
 
 export const MOCK_STATUS = {
   config: {
-    siteName: 'PulseBoard Demo',
+    siteName: 'Status Demo',
     siteDesc: 'Demo — real-time service monitoring',
     refreshInterval: 5,
     dataRetentionDays: 90,
@@ -23,27 +23,27 @@ export const MOCK_STATUS = {
     {
       id: 1, name: 'Main Website', type: 'https', host: 'https://example.com',
       currentStatus: 'up', latestResponseTime: 42, hideHost: true,
-      uptimeBars: bars(98),
+      bars: bars(98),
     },
     {
       id: 2, name: 'API Server', type: 'https', host: 'https://api.example.com',
       currentStatus: 'up', latestResponseTime: 87, hideHost: true,
-      uptimeBars: bars(99.5),
+      bars: bars(99.5),
     },
     {
       id: 3, name: 'Database', type: 'tcp', host: 'db.internal:5432',
       currentStatus: 'up', latestResponseTime: 5, hideHost: true,
-      uptimeBars: bars(99.9),
+      bars: bars(99.9),
     },
     {
       id: 4, name: 'CDN Edge', type: 'https', host: 'https://cdn.example.com',
       currentStatus: 'degraded', latestResponseTime: 320, hideHost: true,
-      uptimeBars: bars(95),
+      bars: bars(95),
     },
     {
       id: 5, name: 'Mail Service', type: 'tcp', host: 'mail.internal:587',
       currentStatus: 'up', latestResponseTime: 18, hideHost: true,
-      uptimeBars: bars(97),
+      bars: bars(97),
     },
   ],
 };
