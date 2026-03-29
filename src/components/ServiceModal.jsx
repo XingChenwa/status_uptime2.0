@@ -1,4 +1,4 @@
-import { useState, useEffect } from 'react';
+import { useState } from 'react';
 import { X, Globe, Server, Radio, Info } from 'lucide-react';
 import { useTranslation } from 'react-i18next';
 
@@ -11,8 +11,6 @@ const TYPE_OPTIONS = [
 export default function ServiceModal({ service, onClose, onSave }) {
   const { t } = useTranslation();
   const isEdit = !!service;
-  const [visible, setVisible] = useState(false);
-  useEffect(() => { requestAnimationFrame(() => setVisible(true)); }, []);
   const [form, setForm] = useState({
     name:      service?.name      || '',
     type:      service?.type      || 'http',
@@ -45,10 +43,10 @@ export default function ServiceModal({ service, onClose, onSave }) {
   };
 
   return (
-    <div className={`fixed inset-0 z-50 flex items-center justify-center p-4 ${visible ? 'dialog-overlay-enter' : 'opacity-0'}`} onClick={onClose}>
+    <div className="fixed inset-0 z-50 flex items-center justify-center p-4" onClick={onClose}>
       <div className="absolute inset-0 bg-black/60 backdrop-blur-sm" />
       <div
-        className={`relative w-full max-w-md bg-th-surface border border-th-border rounded-2xl shadow-2xl ${visible ? 'dialog-card-enter' : 'opacity-0 scale-95'}`}
+        className="relative w-full max-w-md bg-th-surface border border-th-border rounded-2xl shadow-2xl"
         onClick={(e) => e.stopPropagation()}
       >
         {/* Header */}

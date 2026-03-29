@@ -468,9 +468,9 @@ export default function StatusPage() {
       )}
 
       {incidentModal.open && isAdmin && (
-        <div className="fixed inset-0 z-50 flex items-center justify-center p-4 dialog-overlay-enter" onClick={() => setIncidentModal({ open: false })}>
+        <div className="fixed inset-0 z-50 flex items-center justify-center p-4" onClick={() => setIncidentModal({ open: false })}>
           <div className="absolute inset-0 bg-black/60 backdrop-blur-sm" />
-          <div className="relative w-full max-w-md bg-th-surface border border-th-border rounded-2xl shadow-2xl dialog-card-enter" onClick={(e) => e.stopPropagation()}>
+          <div className="relative w-full max-w-md bg-th-surface border border-th-border rounded-2xl shadow-2xl" onClick={(e) => e.stopPropagation()}>
             <div className="flex items-center justify-between px-5 py-4 border-b border-th-card">
               <span className="font-semibold text-sm text-th-text">{t('incidents.addIncident')}</span>
               <button onClick={() => setIncidentModal({ open: false })} className="p-1.5 rounded-lg text-th-muted hover:text-th-text hover:bg-th-card transition-colors">
