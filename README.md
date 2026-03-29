@@ -2,6 +2,8 @@
 
 **English** | [中文](./README.zh-CN.md)
 
+**[Live Demo](https://xingchenwa.github.io/status_uptime2.0/)** — frontend preview with mock data
+
 A self-hosted, real-time service monitoring status page. Monitor your HTTP endpoints, TCP ports, and hosts via Ping — all from a beautiful, responsive dashboard.
 
 ![PulseBoard Screenshot](./example/734cef0a-d389-462e-b476-54d5a064bc0f.png)

@@ -7,6 +7,9 @@ import ServiceCard from '../components/ServiceCard.jsx';
 import SettingsModal from '../components/SettingsModal.jsx';
 import ServiceModal from '../components/ServiceModal.jsx';
 import ConfirmDialog from '../components/ConfirmDialog.jsx';
+import { MOCK_STATUS, MOCK_INCIDENTS } from '../mockData.js';
+
+const DEMO = import.meta.env.VITE_DEMO_MODE === 'true';
 
 const INCIDENT_BADGE = {
   investigating: { text: 'text-[#e92020]', bg: 'bg-[#e92020]/10', border: 'border-[#e92020]/30', dot: 'bg-[#e92020]' },
@@ -225,6 +228,7 @@ export default function StatusPage() {
   const [confirmDialog, setConfirmDialog] = useState({ open: false, message: '', onConfirm: null });
 
   const fetchIncidents = useCallback(async () => {
+    if (DEMO) { setIncidents(MOCK_INCIDENTS); return; }
     try {
       const res = await fetch('/api/incidents');
       const json = await res.json();
@@ -233,6 +237,11 @@ export default function StatusPage() {
   }, []);
 
   const fetchStatus = useCallback(async (isManual = false) => {
+    if (DEMO) {
+      if (isManual) { setRefreshing(true); setTimeout(() => setRefreshing(false), 600); }
+      setData(MOCK_STATUS); setLoading(false); setCountdown(300);
+      return;
+    }
     if (isManual) setRefreshing(true);
     try {
       const res = await fetch('/api/status');
