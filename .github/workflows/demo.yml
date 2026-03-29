@@ -34,10 +34,9 @@ jobs:
         run: npm ci
 
       - name: Build demo
-        run: npm run build
+        run: npx vite build --base=/status_uptime2.0/
         env:
           VITE_DEMO_MODE: 'true'
-          VITE_BASE: '/status_uptime2.0/'
 
       - name: Setup Pages
         uses: actions/configure-pages@v4
