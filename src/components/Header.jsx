@@ -46,9 +46,7 @@ export default function Header({ siteName, refreshing, onRefresh, onSettings, on
 
         {/* Logo / Site name */}
         <div className="flex items-center gap-3 flex-shrink-0">
-          <div className="w-8 h-8 rounded-lg bg-th-accent flex items-center justify-center flex-shrink-0">
-            <span className="text-white text-xs font-bold select-none">S</span>
-          </div>
+          <img src="/favicon.svg" alt="logo" className="w-8 h-8 rounded-lg select-none" />
           <span className="font-semibold text-th-text text-sm tracking-tight truncate">{siteName}</span>
         </div>
 

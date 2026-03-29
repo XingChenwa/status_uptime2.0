@@ -355,7 +355,7 @@ export default function StatusPage() {
   const sc = STATUS_CFG[status];
 
   return (
-    <div className="min-h-screen bg-th-bg text-th-text">
+    <div className="min-h-screen bg-th-bg text-th-text flex flex-col">
       <Header
         siteName={data?.config?.siteName || 'Status Page'}
         refreshing={refreshing}
@@ -364,7 +364,7 @@ export default function StatusPage() {
         onAddService={isAdmin ? () => setServiceModal({ open: true, service: null }) : null}
       />
 
-      <main className="max-w-5xl mx-auto px-4 sm:px-6 pb-16 pt-8">
+      <main className="max-w-5xl mx-auto px-4 sm:px-6 py-8 w-full flex-1">
         {error && (
           <div className="mb-5 flex items-center gap-2 px-4 py-3 bg-[#e92020]/10 border border-[#e92020]/30 rounded-xl text-[#e92020] text-sm">
             <XCircle className="w-4 h-4 flex-shrink-0" /><span>{error}</span>
@@ -454,6 +454,7 @@ export default function StatusPage() {
           fetchIncidents={fetchIncidents}
           onAdd={() => { setIncidentForm({ title: '', message: '', status: 'investigating', affected_services: [] }); setIncidentModal({ open: true }); }}
         />
+
       </main>
 
       {showSettings && isAdmin && (
@@ -557,6 +558,19 @@ export default function StatusPage() {
         onConfirm={confirmDialog.onConfirm}
         onCancel={() => setConfirmDialog(d => ({ ...d, open: false }))}
       />
+
+      <footer className="py-3 text-center text-th-dim text-xs border-t border-th-border">
+        Copyright © 2026{' '}
+        <a
+          href="https://github.com/XingChenwa"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="text-th-muted hover:text-th-accent transition-colors"
+        >
+          XinQing'酱
+        </a>
+        {' '}· All Rights Reserved.
+      </footer>
     </div>
   );
 }

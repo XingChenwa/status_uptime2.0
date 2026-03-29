@@ -4,7 +4,7 @@
 
 自托管、实时服务监控状态页面。监控 HTTP 接口、TCP 端口和 Ping（ICMP）——一切尽在美观、响应式的仪表板中。
 
-![PulseBoard 截图](https://via.placeholder.com/900x500?text=PulseBoard+Screenshot)
+![status_uptime2.0 截图](./example/734cef0a-d389-462e-b476-54d5a064bc0f.png)
 
 ## 功能特性
 
@@ -119,4 +119,4 @@ pulseboard/
 
 ## 开源协议
 
-MIT © [XingChenwa](https://github.com/XingChenwa/status_uptime2.0/blob/main/LICENSE)
+MIT © [XingChenwa](./LICENSE)

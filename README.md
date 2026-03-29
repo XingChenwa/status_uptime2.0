@@ -4,7 +4,7 @@
 
 A self-hosted, real-time service monitoring status page. Monitor your HTTP endpoints, TCP ports, and hosts via Ping — all from a beautiful, responsive dashboard.
 
-![PulseBoard Screenshot](https://via.placeholder.com/900x500?text=PulseBoard+Screenshot)
+![PulseBoard Screenshot](./example/734cef0a-d389-462e-b476-54d5a064bc0f.png)
 
 ## Features
 
@@ -119,4 +119,4 @@ All data is persisted in `status.db` (SQLite via sql.js) in the project root. Ba
 
 ## License
 
-MIT © [XingChenwa](https://github.com/XingChenwa/status_uptime2.0/blob/main/LICENSE)
+MIT © [XingChenwa](./LICENSE)
