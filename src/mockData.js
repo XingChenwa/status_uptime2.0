@@ -6,7 +6,9 @@ function bars(upBase = 99) {
     const date = new Date(now - (89 - i) * day).toISOString().slice(0, 10);
     const roll = Math.random() * 100;
     const uptime = roll > 2 ? upBase + Math.random() * (100 - upBase) : Math.random() * 60;
-    return { date, uptime: +uptime.toFixed(2), count: Math.floor(Math.random() * 20) + 5 };
+    const u = +uptime.toFixed(2);
+    const status = u >= 95 ? 'up' : u >= 50 ? 'degraded' : 'down';
+    return { date, uptime: u, status, checks: Math.floor(Math.random() * 20) + 5 };
   });
 }
 

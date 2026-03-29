@@ -46,7 +46,7 @@ export default function Header({ siteName, refreshing, onRefresh, onSettings, on
 
         {/* Logo / Site name */}
         <div className="flex items-center gap-3 flex-shrink-0">
-          <img src="/favicon.svg" alt="logo" className="w-8 h-8 rounded-lg select-none" />
+          <img src={`${import.meta.env.BASE_URL}favicon.svg`} alt="logo" className="w-8 h-8 rounded-lg select-none" />
           <span className="font-semibold text-th-text text-sm tracking-tight truncate">{siteName}</span>
         </div>
 
